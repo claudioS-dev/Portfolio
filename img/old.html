@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubre el portafolio de un joven programador de Chile, experto en desarrollo de software. Explora proyectos innovadores y habilidades técnicas destacadas. ¡Conoce el talento detrás de cada línea de código!"
+    />
+
+    <!-- og -->
+    <meta property="og:title" content="Portfolio de Matias" />
+    <meta
+      property="og:description"
+      content="Descubre el portafolio de un apasionado desarrollador de software. Explora proyectos innovadores y habilidades técnicas destacadas. ¡Conoce el talento detrás de cada línea de código!"
+    />
+    <meta property="og:image" content="" />
+    <!-- PENDIENTE!! -->
+    <meta property="og:url" content="" />
+    <!-- PENDIENTE!!  -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CL" />
+
+    <title>Portfolio</title>
+    <script src="/script.js"></script>
+    <link rel="stylesheet" href="oldstyles.css" />
+    <link rel="stylesheet" href="/animated-background.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600;700&family=Inter&family=Dongle&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="navbar-default">
+      <nav>
+        <p class="logo">XFOLIO</p>
+        <ul>
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+          <a href="#">About me</a>
+        </ul>
+      </nav>
+      <button id="contact-me">LET'S TALK</button>
+    </header>
+
+    <main>
+      <section id="landing-page">
+        <!-- BUBBLE GRADIENT ANIMATION -->
+        <div class="gradient-bg">
+          <svg>
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  stdDeviation="10"
+                  result="blur"
+                ></feGaussianBlur>
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                  result="goo"
+                ></feColorMatrix>
+                <feBlend in="SourceGraphic" in2="goo"></feBlend>
+              </filter>
+            </defs>
+          </svg>
+          <div class="gradients-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+            <div class="interactive"></div>
+          </div>
+        </div>
+        <!--  -->
+        <div id="center-landing-page">
+          <img src="Foto-CV-Hombre.jpg" alt="" class="profile-img" />
+
+          <h1>
+            <span class="gradient-text">I am Claudio,</span> creative <br />
+            web developer in Chile.
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+            iste ipsam ut fugiat saepe delectus dolor
+          </p>
+          <p></p>
+          <div>
+            <button class="get-in-touch" onclick="redirect()">
+              GET IN TOUCH
+            </button>
+            <button class="view-all-works" onclick='redirect("#landing-page")'>
+              VIEW ALL WORKS
+            </button>
+          </div>
+        </div>
+        <footer>
+          <p>Trusted by leading brands</p>
+          <p>
+            <img
+              class="logo-companies"
+              src="logosEmpresas/logoipsum-1.svg"
+              alt=""
+            />
+            <img
+              class="logo-companies"
+              src="logosEmpresas/logoipsum-2.svg"
+              alt=""
+            />
+            <img
+              class="logo-companies"
+              src="logosEmpresas/logoipsum-3.svg"
+              alt=""
+            />
+            <img
+              class="logo-companies"
+              src="logosEmpresas/logoipsum-4.svg"
+              alt=""
+            />
+          </p>
+        </footer>
+      </section>
+
+      <section id="services">
+        <header>
+          <h2>
+            Design that solves <br /><span id="spacing-problems"
+              >──problems, one</span
+            ><br /><span class="gradient-text">product at a time</span>
+          </h2>
+          <div class="buttons-container">
+            <button class="get-in-touch" onclick="">GET IN TOUCH</button>
+            <button class="view-all-works" onclick='redirect("#landing-page")'>
+              VIEW ALL WORKS
+            </button>
+          </div>
+        </header>
+
+        <ul>
+          <li>
+            <h2>UI/UX DESIGN</h2>
+            <img
+              src="img/icons/arrow-up-right-svgrepo-com.svg"
+              alt="icon-arrow"
+            />
+          </li>
+          <li>
+            <h2>GRAPHIC DESING</h2>
+            <img
+              src="img/icons/arrow-up-right-svgrepo-com.svg"
+              alt="icon-arrow"
+            />
+          </li>
+          <li>
+            <h2>JAVASCRIPT</h2>
+            <img
+              src="img/icons/arrow-up-right-svgrepo-com.svg"
+              alt="icon-arrow"
+            />
+          </li>
+          <li>
+            <h2>PRODUCT DESING</h2>
+            <img
+              src="img/icons/arrow-up-right-svgrepo-com.svg"
+              alt="icon-arrow"
+            />
+          </li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <header>
+          <h2>Look at my <br /><span class="gradient-text">Projects</span></h2>
+          <p>
+            Lorem ipsum dolor sit id inventore dolor veritatis nobis tempora
+            quidem eum. Quod cum in modi?
+          </p>
+        </header>
+
+        <div class="card">
+          <img class="card-img" src="" alt="" />
+          <footer>
+            <h6>Project</h6>
+            <h7>small description</h7>
+          </footer>
+        </div>
+        <div class="card">
+          <img class="card-img" src="" alt="" />
+          <footer>
+            <h6>Project2</h6>
+            <h7>small description</h7>
+          </footer>
+        </div>
+        <div class="card">
+          <img class="card-img" src="" alt="" />
+          <footer>
+            <h6>Project3</h6>
+            <h7>small description</h7>
+          </footer>
+        </div>
+        <div class="card">
+          <img class="card-img" src="" alt="" />
+          <footer>
+            <h6>Project4</h6>
+            <h7>small description</h7>
+          </footer>
+        </div>
+      </section>
+
+      <section id="contact">
+        <article>
+          <h2>CONTACT ME</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            facilisis.
+          </p>
+          <p class="icon-contact">
+            <img
+              src="img/icons/letter-svgrepo-com.svg"
+              alt="ico-email"
+            />123@123.com
+          </p>
+          <p class="icon-contact">
+            <img
+              src="img/icons/phone-rounded-svgrepo-com.svg"
+              alt="ico-phone"
+            />+56 932158821
+          </p>
+        </article>
+        <form action="/proccess-form" method="post">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingresa tu Nombre*"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ingresa tu email*"
+            required
+          />
+
+          <label for="budget">Budget</label>
+          <input
+            type="number"
+            id="budget"
+            name="budget"
+            placeholder=""
+            required
+          />
+
+          <label for="message">What do you want to do?*</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button id="submit">SUBMIT NOW</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <p class="logo">Portfolio</p>
+        <small>Copyright©️</small>
+      </div>
+      <nav>
+        <ul>
+          <a>Home</a>
+          <a>About us</a>
+          <a>Contact</a>
+        </ul>
+      </nav>
+      <div class="footer-icons">
+        <div class="container-icon">
+          <img
+            class="icon-footer"
+            src="img/icons/linkedin-svgrepo-com.svg"
+            alt="Linkedin"
+          />
+        </div>
+        <div class="container-icon">
+          <img
+            class="icon-footer"
+            src="img/icons/twitter-bird-svgrepo-com.svg"
+            alt="Twitter"
+          />
+        </div>
+        <div class="container-icon">
+          <img
+            class="icon-footer"
+            src="img/icons/instagram-svgrepo-com.svg"
+            alt="Instagram"
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="animated-background.js"></script>
+  </body>
+</html>

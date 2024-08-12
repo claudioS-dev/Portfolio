@@ -1,0 +1,389 @@
+/* Configuracion general */
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #161513;
+}
+
+h1 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+h2 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: normal;
+}
+button {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* navbar */
+.navbar-default {
+  display: flex;
+  justify-content: space-between;
+  background-color: #161513;
+  align-items: flex-end;
+  margin-left: 7rem;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: white;
+}
+
+#contact-me {
+  margin-right: 10rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 0.8rem 1.3rem;
+}
+
+#contact-me:hover {
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.8); /* Sombra al hacer hover */
+}
+
+.navbar-default nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.navbar-default nav ul a {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+/* landing-page */
+/* REVISAR */
+html {
+  height: 100%;
+}
+
+#landing-page {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #161513;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+#landing-page #center-landing-page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.profile-img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  object-fit: cover;
+}
+
+#landing-page h1 {
+  font-size: 3.5rem;
+  display: grid;
+  place-items: center;
+}
+
+#landing-page br {
+  content: "\A";
+  display: none;
+  white-space: pre;
+}
+
+.gradient-text {
+  /* Pagina para crear gradientes 
+    https://colorffy.com/text-gradient-generator 
+    */
+  color: #b16cea;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #b16cea 33%,
+    #ff5e69 72%,
+    #ff8a56 96%,
+    #ffa84b 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 5s ease infinite;
+}
+
+h1 .gradient-text {
+  text-shadow: 4px 4px white;
+}
+
+#landing-page p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+#landing-page footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: auto;
+}
+
+#landing-page footer p {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.get-in-touch {
+  padding: 1.3rem 2.5rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #b16cea 33%,
+    #ff5e69 72%,
+    #ff8a56 96%,
+    #ffa84b 50%
+  );
+  background-size: 200% 200%;
+  transition: background-position 0.5s ease;
+}
+
+.get-in-touch:hover {
+  background-position: right center; /* Cambia la posición del gradiente al hacer hover */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Sombra al hacer hover */
+}
+
+.view-all-works {
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 30px;
+  border: 0.1rem solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.view-all-works:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Sombra al hacer hover */
+}
+
+.logo-companies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  margin: 3rem;
+}
+
+#services,
+#projects {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+/* Servicios */
+#services {
+  color: white;
+  background: #1c1c22;
+}
+
+#services header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#services header h2 {
+  margin-bottom: 3rem;
+}
+
+#spacing-problems {
+  margin-left: 3rem;
+}
+.buttons-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+}
+
+.buttons-container .get-in-touch {
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #b16cea 33%,
+    #ff5e69 72%,
+    #ff8a56 96%,
+    #ffa84b 50%
+  );
+  color: white;
+}
+
+#services ul {
+  list-style-type: none;
+  padding: 0;
+  user-select: none;
+}
+#services li {
+  display: flex;
+  padding-bottom: 5rem;
+  font-size: 2rem;
+  border-top: 0.1rem solid white;
+  border-bottom: 0.1rem solid white;
+  padding: 1.5rem;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#services li h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#services li:hover {
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #b16cea 33%,
+    #ff5e69 72%,
+    #ff8a56 96%
+  );
+}
+
+#services li img {
+  height: 5rem;
+  width: 5rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* Contact */
+.icon-contact img {
+  height: 1em;
+  width: 1rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+#contact {
+  display: flex;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#projects {
+  background: #161513;
+  flex-direction: row;
+  color: white;
+  min-height: 95vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects h2 {
+  margin-left: 3rem;
+}
+
+/* Superponer contenido del landing sobre el fondo animado */
+#landing-page {
+  position: relative;
+  overflow: hidden;
+}
+
+#landing-page #center-landing-page {
+  position: relative;
+  z-index: 10;
+}
+
+.profile-img,
+#landing-page h1,
+#landing-page p,
+#landing-page button,
+#landing-page > footer {
+  position: relative;
+  z-index: 10;
+}
+
+#landing-page > footer {
+  position: relative;
+  z-index: 10;
+}
+/*  */
+
+/* footer {
+    display: flex;
+}
+
+footer .footer-icons{
+    display: flex;
+    align-items: flex-end;
+}
+
+footer .container-icon {
+    height: 20em;
+    width: 20em;
+    background-color: white;
+    position: relative;
+    margin: 5em;
+    border-radius: 50%;
+}
+
+footer .container-icon::before {
+    position: absolute;
+    content: "";
+    height: 120%;
+    width: 120%;
+    background-image: -webkit-linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B);
+    background-image: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B);
+    left: -10;
+    top: -10;
+    z-index: -1; /* Colocar detrás del contenido del elemento principal 
+    border-radius: 50%;
+}
+
+footer .icon-footer {
+    height: 1em;
+    width: 1rem;
+} 
+*/
