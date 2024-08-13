@@ -28,3 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   move();
 });
+
+function openWhatsApp() {
+  window.open("https://api.whatsapp.com/send?phone=56932158831", "_blank");
+}

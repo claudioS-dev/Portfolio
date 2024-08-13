@@ -39,13 +39,19 @@
       <nav>
         <p class="logo">XFOLIO</p>
         <ul>
-          <a href="#">Home</a>
-          <a href="#">Services</a>
-          <a href="#">Projects</a>
-          <a href="#">About me</a>
+          <a href="#landing-page">Home</a>
+          <a href="#services">Services</a>
+          <a
+            href="https://api.whatsapp.com/send?phone=56932158831"
+            target="_blank"
+            >Contact</a
+          >
+          <a href="#hobbies">About me</a>
         </ul>
       </nav>
-      <button id="nav-button" class="btn">LET'S TALK</button>
+      <button id="nav-button" class="btn" onclick="openWhatsApp()">
+        LET'S TALK
+      </button>
     </header>
 
     <main>
@@ -93,13 +99,10 @@
           </p>
           <p></p>
           <div class="btn-container">
-            <button class="btn btn-primary" onclick="redirect()">
+            <button class="btn btn-primary" onclick="openWhatsApp()">
               GET IN TOUCH
             </button>
-            <button
-              class="btn btn-secondary"
-              onclick='redirect("#landing-page")'
-            >
+            <button class="btn btn-secondary" onclick='redirect("#services")'>
               VIEW ALL WORKS
             </button>
           </div>
@@ -183,127 +186,77 @@
 
       <section id="hobbies" class="container">
         <header>
-          <h2>Look at my <br /><span class="gradient-text">Hobbies</span></h2>
-          <p>
+          <h2>Look at my <br /><span class="gradient-text">Hobbies.</span></h2>
+          <p class="description">
             Lorem ipsum dolor sit id inventore dolor veritatis nobis tempora
             quidem eum. Quod cum in modi?
           </p>
         </header>
-
-        <figure class="card">
-          <img class="card-img" src="img/programming.jpg" alt="" />
-          <figcaption>
-            <h3>Project</h3>
-            <p>small description</p>
-          </figcaption>
-        </figure>
-        <figure class="card">
-          <img class="card-img" src="" alt="" />
-          <figcaption>
-            <h3>Project</h3>
-            <p>small description</p>
-          </figcaption>
-        </figure>
-        <figure class="card">
-          <img class="card-img" src="" alt="" />
-          <figcaption>
-            <h3>Project</h3>
-            <p>small description</p>
-          </figcaption>
-        </figure>
-        <figure class="card">
-          <img class="card-img" src="" alt="" />
-          <figcaption>
-            <h3>Project</h3>
-            <p>small description</p>
-          </figcaption>
-        </figure>
-      </section>
-
-      <section id="contact" class="container">
-        <article>
-          <h2>CONTACT ME</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            facilisis.
-          </p>
-          <p class="icon-contact">
-            <img
-              src="img/icons/letter-svgrepo-com.svg"
-              alt="ico-email"
-            />123@123.com
-          </p>
-          <p class="icon-contact">
-            <img
-              src="img/icons/phone-rounded-svgrepo-com.svg"
-              alt="ico-phone"
-            />+56 932158821
-          </p>
-        </article>
-        <form action="/proccess-form" method="post">
-          <label for="name">Name</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Ingresa tu Nombre*"
-            required
-          />
-
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Ingresa tu email*"
-            required
-          />
-
-          <label for="budget">Budget</label>
-          <input
-            type="number"
-            id="budget"
-            name="budget"
-            placeholder=""
-            required
-          />
-
-          <label for="message">What do you want to do?*</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <button id="submit" class="btn btn-primary">SUBMIT NOW</button>
-        </form>
+        <div id="figures-container">
+          <figure class="card">
+            <img class="card-img" src="img/programming.jpg" alt="" />
+            <figcaption>
+              <h3>Coding</h3>
+              <p>
+                I love bringing ideas to life through code, solving puzzles and
+                creating digital solutions.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img class="card-img" src="img/read.jpg" alt="" />
+            <figcaption>
+              <h3>Reading</h3>
+              <p>
+                I love losing myself in books, discovering new worlds and ideas
+                with every page.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img class="card-img" src="" alt="" />
+            <figcaption>
+              <h3>Project</h3>
+              <p>small description</p>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img class="card-img" src="" alt="" />
+            <figcaption>
+              <h3>Project</h3>
+              <p>small description</p>
+            </figcaption>
+          </figure>
+        </div>
       </section>
     </main>
-
+    <hr />
     <footer class="main-footer">
-      <div>
-        <p class="logo">Portfolio</p>
-        <small>Copyright©️</small>
+      <div class="logo-container">
+        <p class="logo">XFOLIO</p>
+        <small>Designed by Claudio Soto</small>
       </div>
-      <nav>
-        <ul>
-          <a>Home</a>
-          <a>About us</a>
-          <a>Contact</a>
-        </ul>
-      </nav>
-      <div class="footer-icons">
-        <div class="container-icon">
+      <div class="redirect-container">
+        <nav>
+          <ul>
+            <a>Home</a>
+            <a>About me</a>
+            <a>Contact</a>
+          </ul>
+        </nav>
+        <div class="footer-icons">
           <img
             class="icon-footer"
             src="img/icons/linkedin-svgrepo-com.svg"
             alt="Linkedin"
           />
-        </div>
-        <div class="container-icon">
+
           <img
             class="icon-footer"
             src="img/icons/twitter-bird-svgrepo-com.svg"
             alt="Twitter"
           />
-        </div>
-        <div class="container-icon">
+
           <img
             class="icon-footer"
             src="img/icons/instagram-svgrepo-com.svg"
