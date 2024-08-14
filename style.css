@@ -199,6 +199,7 @@ h2 {
   width: 100%;
   height: 10rem;
   margin-top: 6rem;
+  margin-bottom: 2rem;
   z-index: 10;
 }
 
@@ -212,10 +213,10 @@ h2 {
 }
 
 #landing-page footer figure img {
-  width: 160px;
+  width: 100px;
   margin-left: 5rem;
 }
-
+/* services section */
 #services {
   background: #1c1c22;
 }
@@ -311,12 +312,14 @@ h2 {
 .description {
   display: flex;
   flex-direction: column;
-  margin-right: 4rem;
+  margin-right: 5rem auto;
   justify-content: flex-end;
   flex-wrap: wrap;
   align-items: center;
-  width: 20rem;
+  width: 30rem;
   gap: 1rem;
+  padding: 2rem;
+  color: #e4e6ef;
 }
 
 .card {
@@ -460,6 +463,10 @@ hr {
 
 .icon-footer:hover {
   transform: translateY(-5px);
+}
+
+.logo-technology:hover {
+  transform: scale(1.2);
 }
 
 @keyframes gradient {
