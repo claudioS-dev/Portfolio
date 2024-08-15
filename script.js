@@ -2,6 +2,18 @@ function redirect(pageId) {
   window.location.href = pageId;
 }
 
+function openLinkedIn() {
+  window.open("https://www.linkedin.com/in/claudio-soto-66389a24b/", "_blank");
+}
+
+function openGitHub() {
+  window.open("https://github.com/claudioS-dev/", "_blank");
+}
+
+function openWhatsApp() {
+  window.open("https://api.whatsapp.com/send?phone=56932158831", "_blank");
+}
+
 // animated-background.js
 document.addEventListener("DOMContentLoaded", () => {
   const interBubble = document.querySelector(".interactive");
@@ -28,7 +40,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   move();
 });
-
-function openWhatsApp() {
-  window.open("https://api.whatsapp.com/send?phone=56932158831", "_blank");
-}

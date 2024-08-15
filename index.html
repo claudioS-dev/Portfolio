@@ -14,10 +14,6 @@
       property="og:description"
       content="Descubre el portafolio de un apasionado desarrollador de software. Explora proyectos innovadores y habilidades técnicas destacadas. ¡Conoce el talento detrás de cada línea de código!"
     />
-    <meta property="og:image" content="" />
-    <!-- PENDIENTE!! -->
-    <meta property="og:url" content="" />
-    <!-- PENDIENTE!!  -->
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_CL" />
 
@@ -87,15 +83,15 @@
         </div>
         <!--  -->
         <div id="center-landing-page">
-          <img src="img/Foto-CV-Hombre.jpg" alt="" class="profile-img" />
+          <img src="img/claudio.jpg" alt="" class="profile-img" />
 
           <h1>
             <span class="gradient-text">I am Claudio,</span> <br />creative web
             developer in Chile.
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-            iste ipsam ut fugiat saepe delectus dolor
+            Innovative web developer turning ideas into cutting-edge digital
+            solutions.
           </p>
           <p></p>
           <div class="btn-container">
@@ -130,11 +126,10 @@
             ><br /><span class="gradient-text">product at a time.</span>
           </h2>
           <div class="btn-container">
-            <button class="btn btn-primary" onclick="">GET IN TOUCH</button>
-            <button
-              class="btn btn-secondary"
-              onclick='redirect("#landing-page")'
-            >
+            <button class="btn btn-primary" onclick="openWhatsApp()">
+              GET IN TOUCH
+            </button>
+            <button class="btn btn-secondary" onclick='redirect("#services")'>
               VIEW ALL WORKS
             </button>
           </div>
@@ -242,9 +237,9 @@
       <div class="redirect-container">
         <nav>
           <ul>
-            <a>Home</a>
-            <a>About me</a>
-            <a>Contact</a>
+            <a href="#landing-page">Home</a>
+            <a href="#hobbies">About me</a>
+            <a onclick="openWhatsApp()">Contact</a>
           </ul>
         </nav>
         <div class="footer-icons">
@@ -252,11 +247,22 @@
             class="icon-footer"
             src="img/icons/linkedin-svgrepo-com.svg"
             alt="Linkedin"
+            onclick="openLinkedIn()"
           />
 
-          <img class="icon-footer" src="img/icons/whatsapp.svg" alt="Twitter" />
+          <img
+            class="icon-footer"
+            src="img/icons/whatsapp.svg"
+            alt="WhatsApp"
+            onclick="openWhatsApp()"
+          />
 
-          <img class="icon-footer" src="img/icons/github.svg" alt="Instagram" />
+          <img
+            class="icon-footer"
+            src="img/icons/github.svg"
+            alt="GitHub"
+            onclick="openGitHub()"
+          />
         </div>
       </div>
     </footer>
