@@ -14,7 +14,6 @@ function openWhatsApp() {
   window.open("https://api.whatsapp.com/send?phone=56932158831", "_blank");
 }
 
-// animated-background.js
 document.addEventListener("DOMContentLoaded", () => {
   const interBubble = document.querySelector(".interactive");
   let curX = 0;
@@ -28,9 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     interBubble.style.transform = `translate(${Math.round(
       curX
     )}px, ${Math.round(curY)}px)`;
-    requestAnimationFrame(() => {
-      move();
-    });
+    requestAnimationFrame(move);
   }
 
   window.addEventListener("mousemove", (event) => {
@@ -39,4 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   move();
+
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    for (const [key, value] of formData.entries()) {
+      console.log(`${key}: ${value}`);
+    }
+
+    form.reset();
+  });
 });

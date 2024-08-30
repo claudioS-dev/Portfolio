@@ -220,6 +220,7 @@ h2 {
   width: 100px;
   margin-left: 5rem;
 }
+
 /* services section */
 #services {
   background: #1c1c22;
@@ -473,6 +474,86 @@ hr {
   transform: scale(1.2);
 }
 
+/* New Contact Me Section Styles */
+#contact-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 4rem 0;
+}
+
+.contact-content {
+  flex: 1;
+}
+
+.contact-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-content p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #1c1c22;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #e4e6ef;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #252530;
+  color: white;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #6c6c7c;
+}
+
+.contact-form .btn-primary {
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -517,5 +598,13 @@ hr {
   #services li img {
     margin-right: 0;
     margin-bottom: 1rem;
+  }
+
+  #contact-me {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    width: 100%;
   }
 }
